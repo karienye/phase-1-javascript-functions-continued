@@ -1,23 +1,22 @@
 // code your solution here
 
-function saturdayFun (fun = "roller-skate") {
+function saturdayFun (activity = "roller-skate") {
 
-    console.log(`This Saturday i want to ${fun}.`);
+    return`This Saturday, I want to ${activity}!`;
   }
-console.log (saturdayFun());
 
-function mondayWork () {
-    const activity = "go to the office"
-    console.log(`This Monday, I will ${activity} .`);
+
+let mondayWork = function (activity = "go to the office") {
+    return`This Monday, I will ${activity}.`;
   }
-  function wrapAdjective () {
-    const part1 = "special";
-  return function () {
-    const part2 = "ideas";
-    return function () {
-      console.log(`you are ${part1()} where ${part2} `);
+  
+  let wrapAdjective = function (idea ="*") {
+    
+  return function (adjective ="special") {
+    
+      return `You are ${idea}${adjective}${idea}!`;
     };
   };
-}
 
-console.log (wrapAdjective)()();
+
+
